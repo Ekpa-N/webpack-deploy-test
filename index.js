@@ -1,0 +1,23 @@
+const express = require('express');
+const cors = require('cors');
+
+
+const app = express();
+port = 6000;
+
+const testObject = [
+    {id: 1, name: "Ekpa"},
+    {id: 2, name: "Sha"},
+    {id: 3, name: "Jem"},
+]
+
+app.use(express.json())
+app.use(cors())
+
+app.get('/api', (request, response) => {
+    response.json(testObject)
+})
+
+app.listen(port, ()=> {
+    console.log("server dey hear")
+})
