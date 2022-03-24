@@ -1,9 +1,11 @@
+require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
 
 
 const app = express();
-port = 6000;
+port = process.env.PORT;
 
 const testObject = [
     {id: 1, name: "Ekpa"},
