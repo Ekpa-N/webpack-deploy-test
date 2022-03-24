@@ -16,7 +16,7 @@ const testObject = [
 app.use(express.json())
 app.use(cors())
 
-app.get('/api', (request, response) => {
+app.get('/', (request, response) => {
     response.json(testObject)
 })
 
