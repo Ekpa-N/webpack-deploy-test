@@ -1,7 +1,7 @@
 // require ('')
 const path = require('path')
 
-const port = process.env.PORT;
+const port = process.env.PORT
 
 module.exports = {
     mode: 'development',
