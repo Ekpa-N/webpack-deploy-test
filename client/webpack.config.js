@@ -18,7 +18,7 @@ module.exports = {
         //     },
         //   }
         // port: '',
-        port: process.env.PORT,
+        // port: process.env.PORT,
         historyApiFallback: true,
     },
     module: {
