@@ -12,13 +12,12 @@ module.exports = {
         publicPath: "/",
     },
     devServer: {
-        // proxy: {
-        //     "/": {
-        //       target: 'http://localhost:6000',
-        //     },
-        //   }
-        // port: '',
-        // port: process.env.PORT,
+        port: process.env.PORT,
+        proxy: {
+            "/": {
+              target: 'http://localhost:6000',
+            },
+          },
         historyApiFallback: true,
     },
     module: {
