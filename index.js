@@ -5,7 +5,7 @@ const cors = require('cors');
 
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT
 
 const testObject = [
     {id: 1, name: "Ekpa"},
